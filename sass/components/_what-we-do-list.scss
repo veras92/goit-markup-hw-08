@@ -1,0 +1,36 @@
+.list__what-we-do-img {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  justify-content: center;
+}
+.list__what-we-do-li {
+  margin-right: 30px;
+}
+.list__what-we-do-li__overlay {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.list__what-we-do-li__overlay__name {
+  position: absolute;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .section__what-we-do {
+    display: none;
+  }
+}

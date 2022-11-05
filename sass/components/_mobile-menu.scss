@@ -1,0 +1,103 @@
+@media screen and (max-width: 768px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 100000;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--transition-dur-and-func),
+      visibility var(--transition-dur-and-func);
+  }
+
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .mobile-menu__container {
+    position: relative;
+  }
+  .mobile-menu__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+  .mobile-menu__close-btn:hover .mobile-menu__close-icon,
+  .mobile-menu__close-btn:focus .mobile-menu__close-icon {
+    fill: var(--blueColor);
+    cursor: pointer;
+  }
+
+  .mobile-menu__links {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 33px;
+  }
+  .mobile-menu__nav-div {
+    margin-bottom: 302px;
+  }
+
+  .mobile-menu__nav-list__li:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .list__nav__link {
+    color: var(--mainTextColor);
+    transition: color var(--transition-dur-and-func);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .list__nav__link__studio {
+    color: var(--blueColor);
+  }
+
+  .mobile-menu__contact-list {
+    margin-bottom: 64px;
+  }
+  .mobile-menu__tel-number {
+    margin-bottom: 32px;
+  }
+  .mobile-menu__tel-number__link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--blueColor);
+  }
+  .mobile-menu__mail__link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--smallTextColor);
+  }
+  .mobile-menu__social-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  .mobile-menu__social-list__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--blueColor);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}

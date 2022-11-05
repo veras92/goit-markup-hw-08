@@ -1,0 +1,22 @@
+// .footer {
+//   background-color: var(--greyColor);
+//   font-size: 14px;
+//   line-height: 1.7;
+//   letter-spacing: 0.03em;
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// }
+
+.container__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer {
+  background-color: var(--greyColor);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}

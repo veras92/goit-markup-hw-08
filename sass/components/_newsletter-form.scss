@@ -1,0 +1,101 @@
+// .newsletter-form {
+//   display: flex;
+//   align-items: flex-end;
+// }
+// .newsletter-form__label {
+//   display: flex;
+//   flex-direction: column;
+// }
+// .newsletter-form__label__desc {
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.1;
+//   letter-spacing: 0.03em;
+//   color: #ffffff;
+//   margin-bottom: 20px;
+// }
+// .newsletter-form__label__input-wrapper__input {
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//   border-radius: 4px;
+//   padding-left: 15px;
+//   width: 358px;
+//   height: 50px;
+//   background: transparent;
+//   color: white;
+//   transition: border-color var(--transition-dur-and-func);
+
+//   &::placeholder {
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 1.3;
+//     display: flex;
+//     align-items: center;
+//     letter-spacing: 0.03em;
+//   }
+
+//   &:focus {
+//     outline: none;
+//     border-color: var(--blueColor);
+//     cursor: pointer;
+//   }
+// }
+// .newsletter-form__label__input-wrapper {
+//   margin-right: 12px;
+// }
+
+// .newsletter-form__align {
+//   display: flex;
+//   flex-direction: row;
+// }
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newsletter-form__label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.newsletter-form__label__desc {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.newsletter-form__label__input-wrapper__input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 15px;
+  width: 450px;
+  height: 50px;
+  background: transparent;
+  color: white;
+  transition: border-color var(--transition-dur-and-func);
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--blueColor);
+    cursor: pointer;
+  }
+}
+
+.newsletter-form__align {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,27 @@
+// .list__header__contact-info {
+//   margin-left: 318px;
+// }
+// .list__contact-info:not(:last-child) {
+//   margin-right: 30px;
+// }
+// .list__contact-info__link {
+//   display: flex;
+//   align-items: center;
+//   color: var(--smallTextColor);
+//   transition: color var(--transition-dur-and-func);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--blueColor);
+//   }
+// }
+// .list__contact-info__link__icon {
+//   margin-right: 10px;
+//   fill: var(--smallTextColor);
+//   transition: fill var(--transition-dur-and-func);
+
+//   .list__contact-info__link:hover &,
+//   .list__contact-info__link:focus & {
+//     fill: var(--blueColor);
+//   }
+// }

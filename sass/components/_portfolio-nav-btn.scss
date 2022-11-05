@@ -1,0 +1,52 @@
+.nav-btn {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.list__nav-btns {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  justify-content: center;
+  border: none;
+}
+.list__nav-btn-wrap:not(:last-child) {
+  margin-right: 8px;
+}
+.nav-btn__all {
+  width: 73px;
+}
+.nav-btn__site {
+  width: 125px;
+}
+.nav-btn__app {
+  width: 112px;
+}
+.nav-btn__design {
+  width: 103px;
+}
+
+.list__nav-btns button {
+  border: none;
+  background-color: var(--lightGreyBackground);
+  border-radius: 4px;
+  color: var(--mainTextColor);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    background-color: var(--blueColor);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
