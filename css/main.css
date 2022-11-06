@@ -161,7 +161,6 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--blueColor);
-    padding-right: 10px;
   }
 }
 @media screen and (min-width: 768px) {
