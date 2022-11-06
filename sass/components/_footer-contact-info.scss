@@ -71,8 +71,11 @@
   .footer__info {
     margin-right: 70px;
     align-items: flex-start;
+    margin-bottom: 0;
   }
-
+  .footer__social {
+    margin-right: auto;
+  }
   .footer__adress {
     align-items: flex-start;
   }
