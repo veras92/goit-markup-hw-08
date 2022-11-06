@@ -30,13 +30,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
+}
+.newsletter-cont {
+  margin-top: 60px;
 }
 .footer__adress {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
-  margin-bottom: 60px;
+
   font-style: normal;
 }
 .footer__adress__info {
@@ -60,7 +64,6 @@
 
 @media screen and (min-width: 768px) {
   .footer__info {
-    margin-right: 165px;
     justify-content: center;
   }
 }

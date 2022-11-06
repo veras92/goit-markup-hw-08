@@ -28,6 +28,11 @@ body {
   text-decoration: none;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
@@ -77,6 +82,7 @@ body {
   }
   .mobile-menu__container {
     position: relative;
+    height: 100%;
   }
   .mobile-menu__close-btn {
     position: absolute;
@@ -96,9 +102,10 @@ body {
     display: flex;
     flex-direction: column;
     padding: 25px 33px;
+    height: 100%;
   }
   .mobile-menu__nav-div {
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
   .mobile-menu__nav-list__li:not(:last-child) {
     margin-bottom: 32px;
@@ -139,6 +146,17 @@ body {
     flex-direction: row;
     column-gap: 10px;
   }
+  .mobile-menu__social-li::after {
+    content: "";
+    width: 22px;
+    height: 0px;
+    display: inline-block;
+    background-size: contain;
+    color: rgba(33, 33, 33, 0.2);
+  }
+  .mobile-menu__social-li::after {
+    background-image: url("images/Line-3.png"), rgba(33, 33, 33, 0.2);
+  }
   .mobile-menu__social-list__link {
     font-weight: 500;
     font-size: 18px;
@@ -146,10 +164,6 @@ body {
     letter-spacing: 0.02em;
     color: var(--blueColor);
     padding-right: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-  }
-  .mm__sl__l_nf {
-    border: none;
   }
 }
 @media screen and (min-width: 768px) {
@@ -198,7 +212,6 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.2;
-  margin-right: 93px;
 }
 
 .logo__change {
@@ -267,7 +280,7 @@ body {
   .list__header__contact-info {
     flex-direction: row;
     font-size: 14px;
-    margin-left: 315px;
+    margin-left: auto;
   }
   .list__contact-info__link__icon {
     margin-right: 10px;
@@ -285,16 +298,6 @@ body {
   .contact-info__mail-li {
     margin-bottom: 0;
   }
-}
-.list__advantages {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.list__advantages-li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .list__advantages-li:not(:last-child) {
   margin-bottom: 30px;
@@ -339,13 +342,16 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-  .list__advantages-li {
-    align-items: flex-start;
+  .list__advantages-li:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .list__advantages-li__name {
+    text-align: left;
   }
   .list__advantages-li:not(:nth-child(2n)) {
     margin-right: 30px;
   }
-  .list__advantages-li:not(:nth-last-child(-n)) {
+  .list__advantages-li:not(:nth-child(n+3)) {
     margin-bottom: 30px;
   }
   .list__advantages__icon-link {
@@ -423,7 +429,6 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-top: 30px;
-  padding-bottom: 60px;
 }
 
 .list__team-card {
@@ -487,10 +492,13 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .list__team-card:not(:last-child) {
+    margin-bottom: 0px;
+  }
   .list__team-card:not(:nth-child(2n)) {
     margin-right: 30px;
   }
-  .list__team-card:not(:nth-last-child(-n)) {
+  .list__team-card:not(:nth-child(n+3)) {
     margin-bottom: 30px;
   }
 }
@@ -591,6 +599,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 60px;
+}
+
+.newsletter-cont {
+  margin-top: 60px;
 }
 
 .footer__adress {
@@ -598,7 +611,6 @@ body {
   flex-direction: column;
   align-items: center;
   color: white;
-  margin-bottom: 60px;
   font-style: normal;
 }
 
@@ -624,7 +636,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .footer__info {
-    margin-right: 165px;
     justify-content: center;
   }
 }
@@ -641,7 +652,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
 }
 
 .footer__social__join {
@@ -740,7 +750,6 @@ body {
   .newsletter-form {
     flex-direction: row;
     align-items: flex-end;
-    margin-left: 121px;
   }
   .newsletter-form__label {
     flex-direction: column;
@@ -930,9 +939,11 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  nav {
+    margin-right: 93px;
+  }
   .list__header {
     display: flex;
-    margin-right: 96px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -1058,7 +1069,7 @@ nav a:focus {
   .container__footer {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     padding: 0;
     align-items: flex-start;
   }
