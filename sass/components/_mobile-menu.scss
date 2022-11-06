@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
     top: 0;
@@ -85,7 +85,7 @@
   .mobile-menu__social-list {
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
+    column-gap: 10px;
   }
   .mobile-menu__social-list__link {
     font-weight: 500;
@@ -93,6 +93,13 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--blueColor);
+    padding-right: 10px;
+
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  .mm__sl__l_nf {
+    border: none;
   }
 }
 

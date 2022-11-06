@@ -24,7 +24,9 @@
     <!-- HEADER -->
     <header class="header">
       <div class="container container__header">
-        <a href="" class="logo">Web<span class="logo__change">Studio</span></a>
+        <a href="" class="logo header__logo"
+          >Web<span class="logo__change">Studio</span></a
+        >
         <!-- NAVIGATION -->
         <nav>
           <ul class="list list__header">
@@ -46,14 +48,14 @@
             <use href="./images/sprites.svg#icon-burger"></use>
           </svg>
         </button>
-        <ul class="list list__header list__header__contact-info">
-          <li class="list__contact-info">
+        <ul class="list list__header__contact-info">
+          <li class="list__contact-info contact-info__mail-li">
             <a
               href="mailto:info@devstudio.com"
               class="list__contact-info__link"
             >
               <svg
-                class="list__contact-info__link__icon"
+                class="list__contact-info__link__icon header__contact-info__mail-icon"
                 width="16"
                 height="12"
                 aria-label="mail"
@@ -67,7 +69,7 @@
           <li class="list__contact-info">
             <a href="tel:+380961111111" class="list__contact-info__link">
               <svg
-                class="list__contact-info__link__icon"
+                class="list__contact-info__link__icon header__contact-info__phone-icon"
                 width="10"
                 height="16"
                 aria-label="smartphone"
@@ -125,7 +127,7 @@
               </ul>
               <ul class="list mobile-menu__social-list">
                 <li>
-                  <a href="" class="mobile-menu__social-list__link"
+                  <a href="" class="mobile-menu__social-list__link mm__sl__l_no"
                     >Instagram
                   </a>
                 </li>
@@ -136,7 +138,9 @@
                   <a href="" class="mobile-menu__social-list__link">Facebook</a>
                 </li>
                 <li>
-                  <a href="" class="mobile-menu__social-list__link">LinkedIn</a>
+                  <a href="" class="mobile-menu__social-list__link mm__sl__l_nf"
+                    >LinkedIn</a
+                  >
                 </li>
               </ul>
             </div>
@@ -158,7 +162,7 @@
       <!-- ПЕРЕВАГИ -->
 
       <section class="section">
-        <div class="container">
+        <div class="container advantages__container">
           <ul class="list list__advantages-icons list__advantages">
             <li class="list__advantages-li">
               <a href="" class="list__advantages__icon-link">
@@ -216,7 +220,11 @@
           <ul class="list list__what-we-do-img">
             <li class="list__what-we-do-li">
               <div class="list__what-we-do-li__overlay">
-                <img src="images/img.jpg" alt="A man coding" width="370" />
+                <img
+                  srcset="images/img.jpg 1x, images/wwd-1@2x.jpg 2x"
+                  src="images/img.jpg"
+                  alt="A man coding"
+                />
                 <p class="list__what-we-do-li__overlay__name">
                   ДЕСКТОПНІ ДОДАТКИ
                 </p>
@@ -224,7 +232,12 @@
             </li>
             <li class="list__what-we-do-li">
               <div class="list__what-we-do-li__overlay">
-                <img src="images/img-2.jpg" alt="A woman coding" width="370" />
+                <img
+                  srcset="images/img-2.jpg 1x, images/wwd-2@2x.jpg 2x"
+                  src="images/img-2.jpg"
+                  alt="A woman coding"
+                />
+
                 <p class="list__what-we-do-li__overlay__name">
                   МОБІЛЬНІ ДОДАТКИ
                 </p>
@@ -233,9 +246,9 @@
             <li>
               <div class="list__what-we-do-li__overlay">
                 <img
+                  srcset="images/img-3.jpg 1x, images/wwd-3@2x.jpg 2x"
                   src="images/img-3.jpg"
                   alt="Person using a tablet"
-                  width="370"
                 />
                 <p class="list__what-we-do-li__overlay__name">
                   ДИЗАЙНЕРСЬКІ РІШЕННЯ
@@ -253,7 +266,25 @@
           <h2 class="suptitles">Наша команда</h2>
           <ul class="list list__team">
             <li class="list__team-card">
-              <img src="images/img-4-2.jpg" alt="Photo of Ihor" width="270" />
+              <picture>
+                <source
+                  srcset="images/img-4-2.jpg 1x, images/Ihor@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    images/Ihor-tablet.jpg    1x,
+                    images/Ihor-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="images/Ihor-mob.jpg 1x, images/Ihor-mob@2x.jpg 2x"
+                  media="(min-width: 280px)" />
+                <img
+                  srcset="images/img-4-2.jpg"
+                  src="images/img-4-2.jpg"
+                  alt="Photo of Ihor"
+              /></picture>
+
               <div class="list__team-card__wrapper">
                 <h3 class="list__team-card__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="list__team-card__occupation">
@@ -316,7 +347,25 @@
               </div>
             </li>
             <li class="list__team-card">
-              <img src="images/img-5-2.jpg" alt="Photo of Olga" width="270" />
+              <picture>
+                <source
+                  srcset="images/img-5-2.jpg 1x, images/Olha@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    images/Olha-tablet.jpg    1x,
+                    images/Olha-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="images/Olha-mob.jpg 1x, images/Olha-mob@2x.jpg 2x"
+                  media="(min-width: 280px)" />
+                <img
+                  srcset="images/img-4-2.jpg"
+                  src="images/img-4-2.jpg"
+                  alt="Photo of Olga"
+              /></picture>
+
               <div class="list__team-card__wrapper">
                 <h3 class="list__team-card__name">Ольга Рєпіна</h3>
                 <p lang="en" class="list__team-card__occupation">
@@ -379,7 +428,25 @@
               </div>
             </li>
             <li class="list__team-card">
-              <img src="images/img-6-2.jpg" alt="Photo of Mykola" width="270" />
+              <picture>
+                <source
+                  srcset="images/img-6-2.jpg 1x, images/Mykola@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    images/Mykola-tablet.jpg    1x,
+                    images/Mykola-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="images/Mykola-mob.jpg 1x, images/Mykola-mob@2x.jpg 2x"
+                  media="(min-width: 280px)" />
+                <img
+                  srcset="images/img-6-2.jpg"
+                  src="images/img-4-2.jpg"
+                  alt="Photo of Mykola"
+              /></picture>
+
               <div class="list__team-card__wrapper">
                 <h3 class="list__team-card__name">Микола Тарасов</h3>
                 <p lang="en" class="list__team-card__occupation">Marketing</p>
@@ -440,11 +507,28 @@
               </div>
             </li>
             <li class="list__team-card">
-              <img
-                src="images/img-7-2.jpg"
-                alt="Photo of Mykhailo"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="images/img-7-2.jpg 1x, images/Mykhailo@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    images/Mykhailo-tablet.jpg    1x,
+                    images/Mykhailo-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    images/Mykhailo-mob.jpg    1x,
+                    images/Mykhailo-mob@2x.jpg 2x
+                  "
+                  media="(min-width: 280px)" />
+                <img
+                  srcset="images/img-7-2.jpg"
+                  src="images/img-7-2.jpg"
+                  alt="Photo of Mykhailo"
+              /></picture>
+
               <div class="list__team-card__wrapper">
                 <h3 class="list__team-card__name">Михайло Єрмаков</h3>
                 <p lang="en" class="list__team-card__occupation">UI Designer</p>

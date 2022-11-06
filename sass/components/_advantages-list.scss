@@ -73,3 +73,45 @@
   letter-spacing: 0.03em;
   color: var(--smallTextColor);
 }
+@media screen and (min-width: 768px) {
+  .list__advantages {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .list__advantages-li {
+    align-items: flex-start;
+  }
+  .list__advantages-li:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .list__advantages-li:not(:nth-last-child(-n)) {
+    margin-bottom: 30px;
+  }
+
+  .list__advantages__icon-link {
+    width: 354px;
+  }
+  .list__advantages-li__desc {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list__advantages {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+
+  .list__advantages-li:not(:nth-child(2n)) {
+    margin-right: 0;
+  }
+  .list__advantages-li:not(:nth-last-child(-n)) {
+    margin-bottom: 0;
+  }
+  .list__advantages__icon-link {
+    width: 270px;
+  }
+  .list__advantages-li__desc {
+    width: 270px;
+  }
+}

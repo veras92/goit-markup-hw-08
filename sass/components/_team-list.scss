@@ -128,3 +128,27 @@
     fill: #ffffff;
   }
 }
+@media screen and (min-width: 768px) {
+  .list__team {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .list__team-card:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .list__team-card:not(:nth-last-child(-n)) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list__team-card:not(:nth-child(2n)) {
+    margin-right: 0px;
+  }
+  .list__team-card:not(:nth-last-child(-n)) {
+    margin-bottom: 0px;
+  }
+  .list__team {
+    margin-top: 50px;
+    gap: 30px;
+  }
+}

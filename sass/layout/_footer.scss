@@ -20,3 +20,19 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .container__footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__footer {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}

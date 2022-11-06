@@ -45,8 +45,47 @@
 @media screen and (min-width: 768px) {
   .list__header {
     display: flex;
+    margin-right: 96px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  }
+  .list__nav:not(:last-child) {
+    margin-right: 50px;
   }
   .mobile-menu-btn {
     display: none;
+  }
+  .list__nav__link {
+    color: var(--mainTextColor);
+    transition: color var(--transition-dur-and-func);
+  }
+  .list__nav__link__studio {
+    color: var(--blueColor);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid #ececec;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .container__header {
+    padding: 0;
+    justify-content: center;
+  }
+  .list__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+  }
+  nav a:hover,
+  nav a:active,
+  nav a:focus {
+    color: var(--blueColor);
   }
 }

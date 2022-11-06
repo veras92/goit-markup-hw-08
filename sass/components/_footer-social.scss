@@ -39,7 +39,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   margin-bottom: 60px;
 }
 .footer__social__join {
@@ -73,5 +72,10 @@
   .list__footer-social__link:hover &,
   .list__footer-social__link:focus & {
     fill: #ffffff;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__social {
+    align-items: flex-start;
   }
 }

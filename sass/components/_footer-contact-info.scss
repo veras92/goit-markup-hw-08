@@ -57,3 +57,20 @@
 .list__footer-contact a {
   color: rgba(255, 255, 255, 0.6);
 }
+
+@media screen and (min-width: 768px) {
+  .footer__info {
+    margin-right: 165px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__info {
+    margin-right: 70px;
+    align-items: flex-start;
+  }
+
+  .footer__adress {
+    align-items: flex-start;
+  }
+}
