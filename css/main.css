@@ -567,9 +567,6 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .clients-container {
-    padding: 0;
-  }
   .list__our-clients {
     flex-wrap: nowrap;
     gap: 30px;
@@ -642,6 +639,9 @@ body {
   }
   .footer__adress {
     align-items: flex-start;
+  }
+  .newsletter-cont {
+    margin-top: 0;
   }
 }
 .footer__social {
